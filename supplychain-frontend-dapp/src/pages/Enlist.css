@@ -1,0 +1,39 @@
+/* Centering the form and making it responsive */
+.enlist-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Adjust form card for mobile screens */
+.ant-card {
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make form items full width */
+.ant-form-item {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .enlist-container {
+    padding: 10px;
+  }
+  .ant-card {
+    padding: 10px;
+  }
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+/* QR Code Image */
+.qr-code {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+  text-align: center;
+}

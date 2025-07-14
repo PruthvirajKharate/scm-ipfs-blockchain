@@ -1,0 +1,100 @@
+/* Apply global styles */
+html,
+body,
+#root,
+.ant-layout {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+}
+
+/* Header styles */
+.ant-layout-header {
+  display: flex;
+  align-items: center;
+  padding: 0 16px !important;
+  background-color: #1b263b !important;
+}
+
+/* Navigation Menu */
+.ant-menu {
+  background-color: #1b263b !important;
+  color: #e0e1dd;
+}
+
+.ant-menu-item {
+  color: #e0e1dd !important;
+}
+
+.ant-menu-item:hover {
+  background-color: #415a77 !important;
+}
+
+/* Sidebar (Sider) */
+.ant-layout-sider {
+  background-color: #415a77 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.ant-menu-inline {
+  background-color: #415a77 !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #778da9 !important;
+}
+
+/* Breadcrumb */
+.ant-breadcrumb {
+  flex-wrap: wrap;
+  color: #e0e1dd;
+}
+
+.ant-breadcrumb a {
+  color: #778da9 !important;
+}
+
+.ant-breadcrumb a:hover {
+  color: #e0e1dd !important;
+}
+
+/* Content */
+.ant-layout-content {
+  padding: 24px;
+  background-color: #1b263b;
+  border-radius: 8px;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 16px;
+  color: #e0e1dd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ant-layout-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ant-menu-horizontal {
+    flex-wrap: wrap;
+  }
+
+  .sidebar-toggle {
+    margin-right: 8px;
+  }
+
+  .ant-layout-content {
+    padding: 16px;
+  }
+}
+
+.qr-scanner button{
+  margin: 10px 10px 10px 10px;
+}

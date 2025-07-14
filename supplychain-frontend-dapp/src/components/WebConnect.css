@@ -1,0 +1,46 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #ff8a00, #e52e71);
+  border: none;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
+  transform: scale(1.05);
+}
+
+button img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Hide text on small screens */
+@media screen and (max-width: 480px) {
+  button {
+    padding: 10px; /* Reduce padding */
+  }
+
+  button img {
+    width: 40px;
+    height: 40px;
+  }
+
+  button::after {
+    content: none;
+  }
+
+  button span {
+    display: none;
+  }
+}
